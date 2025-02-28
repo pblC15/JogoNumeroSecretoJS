@@ -71,3 +71,6 @@ Ex: git reset --hard 'id do commit anterior ao que vc deseja apagar'
     git reset --hard 3e521dae14d215f699e0bb84821724bc856ba65f
 Obs: O id do commit pode ser obtido no comando "git log"
 
+ALTERANDO A MENSAGEM DO ULTIMO COMMIT:
+Ex: git commit --amend -m 'mensagem correta'
+
