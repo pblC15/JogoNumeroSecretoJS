@@ -1,0 +1,73 @@
+Como puxar as atualizações do repositórios remoto para o repositório local:
+Ex: git push origin master
+
+Iniciar o git no repositório:
+Ex: git init
+
+Adicionar arquivos:
+Ex: git add "caminho do arquivo"
+    git add .  
+
+Realizar commite dos arquivos adicionados:
+Ex: git commit -m "projeto inicial"
+
+Configirar usuario e email:
+Ex: git config --global user.name "Pablo Cassiano"
+    git config --gloval user.email "pabloboyreis_5@hotmail.com"
+
+Realizar conexão com repositório remoto:
+Ex: git remote add origin git@github.com:SEU_USUARIO/SEU_REPOSITORIO
+
+Realizar o envio dos arquivos adicionados no commite para o repositório remoto:
+Ex: git push -u origin main
+
+Para conectar o repositorio local ao repositorio remoto:
+-EX: git remote add apelido url
+     git remote add origin "url do repositório remoto"
+     git remote add origin https://github.com/pblC15/TESTE.git
+
+Listar repositórios remotos:
+Ex: git remote -v
+
+Para remover um repositório remoto
+EX: git remote remove "apelido do repositório remoto"
+    git remote remove origin
+
+
+Alterar url do repositório remota:
+Ex: git remote set-url "apelido" "url"
+    git remote set-url origin  https://github.com/pblC15/TESTE
+
+Alterar o apelido do repositório remoto:
+Ex: git rmeote rename "apelido" "novoApelido"
+    git remote rename origin master
+
+
+Adicionando colaborador:
+Ex: $ git commit -m "Adicionar nova funcionalidade.
+    >
+    >
+    Co-authored-by: NOME <nome@email.com>
+    Co-authored-by: OUTRO-NOME <outro@email.com>"
+
+RESOLVENDO CONFLITOS:
+---------------------
+
+Exibe o conflito no código:
+Ex: git pull origin master --allow-unrelated-histories
+    <<<<<<< HEAD
+    // Código do seu repositório local
+    =======
+    // Código do repositório remoto
+    >>>>>>> branch-remota
+
+COMO DESAFAZER UM COMMIT ENVIADO PARA O REPOSITÓRIO REMOTO:
+Ex: git revert "id do commit"
+    git revert 3e521dae14d215f699e0bb84821724bc856ba65f
+Obs: O id do commit pode ser obtido no comando "git log"    
+
+APAGAR UM COMMIT LOCAL ANTES DE ENVIAR PARA O REPOSITÓRIO REMOTO:
+Ex: git reset --hard 'id do commit anterior ao que vc deseja apagar'
+    git reset --hard 3e521dae14d215f699e0bb84821724bc856ba65f
+Obs: O id do commit pode ser obtido no comando "git log"
+
