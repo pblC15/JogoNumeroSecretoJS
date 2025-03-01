@@ -1,0 +1,11 @@
+commit d69d332e8cec48edca458d0dc0a0e30f67141417 (HEAD -> master, origin/master, origin/HEAD)
+Author: Pablo Cassiano <pabloboyreis_5@hotmail.com>
+Date:   Thu Feb 27 23:55:39 2025 -0300
+
+    Adicionando comandos GIT ++
+
+commit df385c100e3d44ac3118583d932cc5a6552c67e3
+Author: Pablo Cassiano <pabloboyreis_5@hotmail.com>
+Date:   Thu Feb 27 23:43:44 2025 -0300
+
+    Corrigindo mensagem do commit
