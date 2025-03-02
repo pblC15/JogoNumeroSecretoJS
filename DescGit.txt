@@ -78,3 +78,21 @@ Obs: O id do commit pode ser obtido no comando "git log"
 --ALTERANDO A MENSAGEM DO ULTIMO COMMIT LOCALMENTE, ANTES DE ENVIAR PARA O REPOSITÓRIO REMOTO:
 Ex: git commit --amend -m 'mensagem correta'
 
+IGONORANDO ARQUIVOS PARA SER ENVIADOS AO REPOSITORIO REMOTO:
+Crie um arquivo chamado .gitignore
+Ex: # Ignorar arquivos temporários
+    *.log
+    *.tmp
+
+    # Ignorar a pasta node_modules (Node.js)
+    node_modules/
+
+    # Ignorar a pasta de dependências do Python
+    __pycache__/
+
+    # Ignorar arquivos de configuração pessoais
+    .env
+    config/settings.json
+
+    # Ignorar tudo dentro de uma pasta específica
+    /secrets/
